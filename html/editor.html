@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Nicolás Felipe Padilla -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wikipedia - Elden Ring - ¡Sé un Editor!</title>
+        <link rel="stylesheet" href="../css/editor.css">
+        <link rel="icon" href="../img/index/icono.ico">
+    </head>
+    <body>
+        <!-- Encabezado de la página -->
+        <header>
+            <img id="logo" src="../img/index/logo1.png" alt="Logo de Elden Ring">
+        </header>
+
+        <!-- Menú de navegación -->
+        <nav id="menu">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    Personajes
+                    <ul class="submenu">
+                        <li><a href="./personajes/Ranni, La Bruja.html">Ranni, La Bruja</a></li>
+                        <li><a href="./personajes/Radahn, Azote de las Estrellas.html">Radahn, Azote de las Estrellas</a></li>
+                        <li><a href="./personajes/Alexander, Puño de hierro.html">Alexander, Puño de Hierro</a></li>
+                    </ul>
+                </li>
+                <li><a href="./mapa.html">Mapa</a></li>
+                <li>
+                    Misiones
+                    <ul class="submenu">
+                        <li><a href="./misiones/principales.html">Principales</a></li>
+                        <li><a href="./misiones/secundarias.html">Secundarias</a></li>
+                    </ul>
+                </li>
+                <li><a href="./builds.html">Builds</a></li>
+                <li><a href="https://www.reddit.com/r/Eldenring/">Foro</a></li>
+                <li>
+                    <div id="modo-oscuro">
+                        <button id="toggle-modo" aria-label="Cambiar a modo oscuro">🌙 Modo Oscuro</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Contenido principal -->
+        <main>
+            <section class="form-section">
+                <h1>¡Sé un Editor!</h1>
+                <blockquote>
+                    Únete a nosotros y ayuda a expandir el conocimiento sobre las Tierras Intermedias.
+                </blockquote>
+                
+                <form class="editor-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre de Usuario:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre en las Tierras Intermedias">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experiencia">Experiencia en Elden Ring:</label>
+                        <select id="experiencia" name="experiencia" required>
+                            <option value="">Selecciona tu nivel de experiencia</option>
+                            <option value="novato">Novato (0-50 horas)</option>
+                            <option value="intermedio">Intermedio (51-200 horas)</option>
+                            <option value="experto">Experto (201-500 horas)</option>
+                            <option value="veterano">Veterano (500+ horas)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="areas">Áreas de Interés:</label>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="areas" value="lore"> Historia y Lore
+                            </label>
+                            <label>
+                                <input type="checkbox" name="areas" value="guias"> Guías y Tutoriales
+                            </label>
+                            <label>
+                                <input type="checkbox" name="areas" value="builds"> Builds y Equipamiento
+                            </label>
+                            <label>
+                                <input type="checkbox" name="areas" value="jefes"> Jefes y Estrategias
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motivacion">¿Por qué quieres ser editor?</label>
+                        <textarea id="motivacion" name="motivacion" required placeholder="Cuéntanos por qué quieres unirte a nuestra comunidad..."></textarea>
+                    </div>
+
+                    <div class="form-group terms">
+                        <label>
+                            <input type="checkbox" name="terminos" required>
+                            Acepto los términos y condiciones
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar Solicitud</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>&copy; 2025 Wikipedia de Elden Ring. Todos los derechos reservados.</p>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="../js/script.js"></script>
+    </body>
+</html>

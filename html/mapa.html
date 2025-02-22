@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Nicolás Felipe Padilla -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mapa Interactivo - Elden Ring</title>
+        <link rel="stylesheet" href="../css/mapa.css">
+        <link rel="icon" href="../img/index/icono.ico">
+    </head>
+    <body>
+        <!-- Encabezado de la página -->
+        <header>
+            <img id="logo" src="../img/index/logo1.png" alt="Logo de Elden Ring">
+        </header>
+
+        <!-- Menú de navegación -->
+        <nav id="menu">
+            <ul class="menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li>
+                    Personajes
+                    <ul class="submenu">
+                        <li><a href="./personajes/Ranni, La Bruja.html">Ranni, La Bruja</a></li>
+                        <li><a href="./personajes/Radahn, Azote de las Estrellas.html">Radahn, Azote de las Estrellas</a></li>
+                        <li><a href="./personajes/Alexander, Puño de hierro.html">Alexander, Puño de Hierro</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Mapa</a></li>
+                <li>
+                    Misiones
+                    <ul class="submenu">
+                        <li><a href="./misiones/principales.html">Principales</a></li>
+                        <li><a href="./misiones/secundarias.html">Secundarias</a></li>
+                    </ul>
+                </li>
+                <li><a href="./builds.html">Builds</a></li>
+                <li><a href="https://www.reddit.com/r/Eldenring/">Foro</a></li>
+                <li>
+                    <div id="modo-oscuro">
+                        <button id="toggle-modo" aria-label="Cambiar a modo oscuro">🌙 Modo Oscuro</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Contenedor del contenido principal -->
+        <main>
+            <div id="contenedor">
+                <!-- Mapa interactivo de Elden Ring -->
+                <iframe src="https://mapgenie.io/elden-ring/maps/the-lands-between" width="100%" height="100%" frameborder="0" style="border: none;"></iframe>
+            </div>
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>&copy; 2025 Wikipedia de Elden Ring. Todos los derechos reservados. </p>
+            <a id="editor" href="./editor.html"><p>Sé un editor</p></a>
+        </footer>
+
+        <!-- Scripts -->
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script src="../js/script.js"></script>
+    </body>
+</html>

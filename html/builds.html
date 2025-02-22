@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Nicolás Felipe Padilla -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar Armas - Elden Ring</title>
+    <link rel="stylesheet" href="../css/inicio.css">
+    <link rel="icon" href="../img/index/icono.ico">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <img id="logo" src="../img/index/logo1.png" alt="Logo de Elden Ring">
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav id="menu">
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li>
+                Personajes
+                <ul class="submenu">
+                    <li><a href="../html/personajes/Ranni, La Bruja.html">Ranni, La Bruja</a></li>
+                    <li><a href="../html/personajes/Radahn, Azote de las Estrellas.html">Radahn, Azote de las Estrellas</a></li>
+                    <li><a href="../html/personajes/Alexander, Puño de hierro.html">Alexander, Puño de Hierro</a></li>
+                </ul>
+            </li>
+            <li><a href="../html/mapa.html">Mapa</a></li>
+            <li>
+                Misiones
+                <ul class="submenu">
+                    <li><a href="./misiones/principales.html">Principales</a></li>
+                    <li><a href="./misiones/secundarias.html">Secundarias</a></li>
+                </ul>
+            </li>
+            <li><a href="../html/builds.html">Builds</a></li>
+            <li><a href="https://www.reddit.com/r/Eldenring/">Foro</a></li>
+            <li>
+                <div id="modo-oscuro">
+                    <button id="toggle-modo" aria-label="Cambiar a modo oscuro">🌙 Modo Oscuro</button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <div id="contenedor">
+            <section id="contenido">
+                <h1>Comparar Armas</h1>
+                <div id="comparador-armas">
+                    <div id="arma1" class="arma-selector">
+                        <h2>Arma 1</h2>
+                        <select id="select-arma1">
+                            <option value="">Selecciona un arma</option>
+                        </select>
+                        <div id="info-arma1" class="info-arma"></div>
+                    </div>
+                    <div id="arma2" class="arma-selector">
+                        <h2>Arma 2</h2>
+                        <select id="select-arma2">
+                            <option value="">Selecciona un arma</option>
+                        </select>
+                        <div id="info-arma2" class="info-arma"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Wikipedia de Elden Ring. Todos los derechos reservados.</p>
+        <a id="editor" href="../html/editor.html"><p>Sé un editor</p></a>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
